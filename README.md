@@ -24,7 +24,7 @@ Author-Sanya Bansal
            <p> This website was developed by Sanya Bansal </p> 
 
   <h2>Feedback:</h2>
-          <p>If you have any suggestions, or feedback regarding the game, feel free to open an issue on the GitHub repository or contact me at sanya.bansal.bbb@gmail.com.</p>
+          <p>If you have any suggestions, or feedback regarding the website, feel free to open an issue on the GitHub repository or contact me at sanya.bansal.bbb@gmail.com.</p>
 
   <h3>Happy coding!!</h3>
 
