@@ -10,7 +10,6 @@ body {
   line-height: 1.4;
   scroll-behavior: smooth;
   color: white;
-  margin-right: 0;
 }
 
 body {
@@ -43,9 +42,6 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
 }
-.nav-item:active{
-  background-color:rgba(255, 255, 255, 0.2);
-}
 
 a {
   text-decoration: none;
@@ -75,7 +71,7 @@ a {
   text-align: left;
   font-size: 27px;
   letter-spacing: 2px;
-  margin-left: 8rem;
+  margin-left: 8%;
   margin-bottom: 2px;
   padding-bottom: 3px;
 }
@@ -100,7 +96,7 @@ a {
 }
 
 .about-section h2 {
-  margin-left: 4rem;
+  margin-left: 4%;
   font-weight: 500;
   padding-top: 2rem;
   font-size: 30px;
@@ -108,11 +104,11 @@ a {
 }
 
 .about-section p {
-  margin-left: 4rem;
+  margin-left: 4%;
   font-weight: 300;
   line-height: 1.8rem;
   font-size: 22px;
-  padding-right: 4rem;
+  padding-right: 4%;
 }
 
 /* SKILL SECTION */
@@ -123,7 +119,7 @@ a {
 }
 
 .skill-section h2 {
-  margin-left: 4rem;
+  margin-left: 4%;
   font-weight: 500;
   padding-top: 2rem;
   font-size: 30px;
@@ -131,7 +127,7 @@ a {
 }
 
 .skill-section ul {
-  margin-left: 4rem;
+  margin-left: 4%;
   color: #FFA0DF;
   font-size: 25px;
   font-weight: 400;
@@ -155,7 +151,7 @@ a {
 }
 
 .project-section h2 {
-  margin-left: 4rem;
+  margin-left: 4%;
   font-weight: 500;
   padding-top: 2rem;
   font-size: 30px;
@@ -166,8 +162,8 @@ a {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  margin-left: 5rem;
-  margin-right: 4rem;
+  margin-left: 5%;
+  margin-right: 4%;
   padding-right: 15px;
 }
 
@@ -199,8 +195,8 @@ a {
   transition: 400ms;
   padding: 8px;
   margin-top: 30px;
-  margin-left: 2.5rem;
-  margin-right: 2rem;
+  margin-left: 2.5%;
+  margin-right: 2%;
 }
 
 .cards .card p.tip {
@@ -236,24 +232,21 @@ a {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center; 
+  justify-content: center; /* Aligning the content at the center horizontally */
 }
 
 .contact-section h2 {
-  margin-left: 4rem;
   font-weight: 500;
-  padding-top: 2rem;
   font-size: 30px;
+  padding-top: 2rem;
   padding-bottom: 10px;
-  align-self: flex-start;
 }
 
-.contact-left {
-  flex-basis: 35%;
-  margin-left: 4rem;
-}
-
+.contact-left,
 .contact-right {
   flex-basis: 35%;
+  margin-left: 4%;
 }
 
 .contact-left p {
@@ -302,8 +295,9 @@ a {
 }
 
 .contact-right form {
-  width: 520px;
-  margin-left: 4rem;
+  width: 100%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
 
 form input,
@@ -313,12 +307,10 @@ form textarea {
   outline: none;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 15px;
-  margin: 15px ;
+  margin: 15px 0;
   color: #fff;
   font-size: 18px;
   border-radius: 6px;
-  margin-left: 27rem;
-  
 }
 
 form .btn2 {
@@ -328,15 +320,157 @@ form .btn2 {
   cursor: pointer;
   border: none;
   margin-top: 2px;
-  margin-left: 37rem;
 }
 
-/* Media query for responsiveness */
+/*ADDING RESPONSIVENESS  */
 @media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .ptext {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .ptext h1 {
+    font-size: 30px;
+  }
+
+  .ptext p {
+    font-size: 22px;
+  }
+
+  .about-section h2,
+  .about-section p,
+  .skill-section h2,
+  .skill-section ul,
+  .project-section h2 {
+    margin-left: 20px; 
+    font-size: 18px;
+  }
+
+  .skill-section ul li {
+    margin-right: 20px;
+  }
+
+  .cards {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .cards .card {
+    width: 90%;
+  }
+
+  .contact-section h2 {
+    font-size: 20px;
+  }
+
   .contact-left,
   .contact-right {
     flex-basis: 100%;
-    margin-left: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contact-right form {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0 20px;
+  }
+
+  form .btn2 {
+    padding: 14px 40px; 
+    font-size: 16px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+  }
+
+  .nav-item {
+    padding: 8px 16px; 
+    margin: 5px 10px; 
+    font-size: 14px;
+  }
+
+  
+  .about-section p {
+    font-size: 18px;
+    padding: 0 20px; 
+  }
+
+  
+  .skill-section ul {
+    font-size: 18px;
+    padding-left: 20px; 
+  }
+
+  
+  .contact-right form input,
+  .contact-right form textarea {
+    font-size: 16px;
+    padding: 10px; /* Adjust as needed */
+  }
+
+ 
+  form .btn2 {
+    padding: 10px 30px; /* Adjust as needed */
+    font-size: 14px;
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .ptext {
+    margin-left: 2%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .ptext h1 {
+    font-size: 35px;
+  }
+
+  .ptext p {
+    font-size: 26px;
+  }
+
+  .about-section h2,
+  .about-section p,
+  .skill-section h2,
+  .skill-section ul,
+  .project-section h2 {
+    margin-left: 2%;
+    font-size: 20px;
+  }
+
+  .skill-section ul li {
+    margin-right: 25px;
+  }
+
+  .cards .card {
+    width: 45%;
+  }
+
+  .contact-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-right form {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  form .btn2 {
+    padding: 14px 50px;
+    font-size: 18px;
+  }
+}
